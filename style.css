@@ -1,0 +1,230 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilos globais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    background-color: #2e8b57; /* Verde floresta */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.cabecalho p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Estilos para o menu de navegação */
+.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-principal a:hover {
+    background-color: #1e603e; /* Verde mais escuro no hover */
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilos para os posts do blog */
+.post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição para o efeito de destaque */
+}
+
+.post:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+    transform: translateY(-5px); /* Move o post um pouco para cima */
+}
+
+.titulo-post {
+    font-family: 'Merriweather', serif;
+    color: #2e8b57;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.data-post {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.imagem-post {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para o hover */
+}
+
+.imagem-post:hover {
+    transform: scale(1.02); /* Aumenta a imagem em 2% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+.conteudo-post {
+    margin-bottom: 20px;
+}
+
+.ler-mais {
+    display: inline-block;
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.ler-mais:hover {
+    color: #1e603e; /* Verde mais escuro no hover */
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e8b57;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2em;
+    }
+    
+    .post {
+        padding: 20px;
+    }
+
+    .titulo-post {
+        font-size: 1.5em;
+    }
+
+    .menu-principal {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+---
+/* Estilos para a página de Contato */
+.formulario-contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não adicione largura extra */
+}
+
+.form-grupo textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+.botao-enviar {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #1e603e;
+}
+
+.redes-sociais {
+    margin-top: 30px;
+}
+
+.redes-sociais h3 {
+    font-family: 'Merriweather', serif;
+    color: #2e8b57;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-link {
+    display: inline-block;
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #1e603e;
+}
